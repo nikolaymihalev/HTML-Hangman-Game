@@ -67,7 +67,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-.keyboard button{
+:where(.game-modal, .keyboard) button{
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
@@ -76,8 +76,10 @@ body{
     background: #5E63BA;
     text-transform: uppercase;
     border-radius: 4px;
-    padding: 7px;
     border: none;
+}
+.keyboard button{
+    padding: 7px;
     width: calc(100% / 9 - 5px);
 }
 .keyboard button:hover{
@@ -113,4 +115,11 @@ body{
     font-size: 1.15rem;
     margin: 15px 0 30px;
     font-weight: 500;
+}
+.game-modal p b{
+    color: #5E63BA;
+    font-weight: 600;
+}
+.game-modal button{
+    padding: 12px 23px;
 }
