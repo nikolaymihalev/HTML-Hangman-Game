@@ -60,3 +60,26 @@ body{
 .game-box .guesses-text b{
     color: #ff0000;
 }
+.game-box .keyboard{
+    display: flex;
+    gap: 5px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.keyboard button{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    background: #5E63BA;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 7px;
+    border: none;
+    width: calc(100% / 9 - 5px);
+}
+.keyboard button:hover{
+    background: #8286c9;
+}
