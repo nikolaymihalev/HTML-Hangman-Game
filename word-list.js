@@ -1,4 +1,4 @@
-const wordArray = [
+const wordList = [
     { word: "elephant", hint: "Large land mammal with a trunk" },
     { word: "sunflower", hint: "Yellow flower that follows the sun" },
     { word: "mountain", hint: "Tall natural elevation on Earth's surface" },
