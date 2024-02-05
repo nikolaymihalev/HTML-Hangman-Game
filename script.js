@@ -1,7 +1,11 @@
 const wordDisplay = document.querySelector(".word-display");
 const keyboardDiv = document.querySelector(".keyboard");
+const guessText = document.querySelector(".guesses-text b");
+
+const maxGuesses = 6;
 
 let currentWord;
+let wrongGuessCount = 0;
 
 const getRandomWord = () => {
     const {word, hint} = wordList[Math.floor(Math.random()*wordList.length)];
@@ -19,8 +23,9 @@ const initGame = (button, clickedLetter)=>{
             }
         })
     }else {
-
+        wrongGuessCount++;
     }
+    guessText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
 }
 
 for(let i = 97; i <= 122; i++){
